@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form input,
+.form textarea,
+.form select {
+  padding: 10px;
+  border: 1px solid #eee7e7;
+  border-radius: 5px;
+}
+
+.upload-btn {
+  background: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* CV */
+.cv {
+  width: 794px;
+  height: 1123px;
+  display: flex;
+  background: white;
+  overflow: hidden;
+}
+
+/* LEFT */
+.left {
+  width: 30%;
+  background: #111;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* IMAGE */
+.img-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+.img-square {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  object-fit: cover;
+}
+
+
+/* SECTION */
+.left h3 {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-bottom: 1px solid #444;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+/* TEXT */
+.left p,
+.right p {
+  width: 100%;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: pre-line;
+}
+
+/* ICON STYLE */
+.icon {
+  margin-right: 1px;
+}
+
+/* RIGHT */
+.right {
+  width: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* NAME */
+.right h1 {
+  margin-bottom: 130px;
+}
+
+/* TITLES */
+.right h2 {
+  border-bottom: 2px solid black;
+  margin-top: 50px;
+  margin-bottom: 8px;
+  padding-bottom: 5px;
+}
+
+/* TEMPLATES */
+.cv.dark .left {
+  background: #111;
+  color: white;
+}
+
+.cv.dark .right {
+  background: white;
+  color: black;
+}
+
+.cv.light .left {
+  background: #f0f0f0;
+  color: black;
+}
+
+.cv.light .right {
+  background: white;
+  color: black;
+}
+
+
