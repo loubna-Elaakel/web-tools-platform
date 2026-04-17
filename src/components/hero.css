@@ -36,3 +36,18 @@ top:50%;
 transform:translateY(-50%);
 color:#64748b;
 }
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero button {
+    width: 100%;
+  }
+}

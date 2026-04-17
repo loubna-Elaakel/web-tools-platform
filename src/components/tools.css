@@ -25,3 +25,26 @@ font-size:35px;
 margin-bottom:10px;
 color:#4f46e5;
 }
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .tools {
+    display: grid;
+    grid-template-columns: 1fr; /* tool وحدة فالسطر */
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .icon {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+}

@@ -143,4 +143,19 @@ button {
   color: black;
 }
 
+@media (max-width: 768px) {
+  .cv {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
 
