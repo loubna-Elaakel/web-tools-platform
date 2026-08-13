@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function TextRepeater(){
 
@@ -20,7 +21,13 @@ setResult(output)
 }
 
 return(
-
+<>
+<SEO
+  title="Text Repeater | Repeat Text Online"
+  description="Repeat text multiple times instantly with this free online text repeater."
+  keywords="text repeater, repeat text, repeat text online, text generator"
+  url="https://web-tools-platform.vercel.app/text-repeater"
+/>
 <div style={{padding:"40px"}}>
 
 <BackHome/>
@@ -52,7 +59,7 @@ style={{width:"100%",height:"120px"}}
 />
 
 </div>
-
+</>
 )
 
 }

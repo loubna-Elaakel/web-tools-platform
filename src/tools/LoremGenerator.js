@@ -1,5 +1,6 @@
 import { useState } from "react";
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 
 function LoremGenerator(){
@@ -21,7 +22,13 @@ setResult(paragraph);
 }
 
 return(
-
+<>
+<SEO
+  title="Lorem Ipsum Generator | Free Placeholder Text"
+  description="Generate Lorem Ipsum placeholder text online for free for websites, designs, and development projects."
+  keywords="lorem ipsum generator, placeholder text generator, lorem ipsum"
+  url="https://web-tools-platform.vercel.app/lorem-generator"
+/>
 <div style={{padding:"30px"}}>
 <BackHome/>
 
@@ -36,7 +43,7 @@ Generate Text
 <p>{result}</p>
 
 </div>
-
+</>
 );
 
 }

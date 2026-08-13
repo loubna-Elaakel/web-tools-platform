@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import BackHome from "../components/BackHome"
-
+import SEO from "../components/SEO";
 
 function PasswordGenerator(){
 
@@ -25,6 +25,13 @@ setPassword(newPassword);
 
 return(
 
+<>
+  <SEO
+    title="Password Generator | Web Tools Platform"
+    description="Generate strong and secure passwords online for free."
+    keywords="password generator, secure password, random password"
+    url="https://web-tools-platform.vercel.app/password-generator"
+  />
 <div style={{padding:"40px"}}>
 <BackHome/>
 
@@ -39,7 +46,7 @@ Generate Password
 <h3>{password}</h3>
 
 </div>
-
+</>
 );
 
 }

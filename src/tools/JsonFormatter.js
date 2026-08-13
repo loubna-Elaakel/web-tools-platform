@@ -1,6 +1,6 @@
 import { useState } from "react";
 import BackHome from "../components/BackHome"
-
+import SEO from "../components/SEO";
 
 function JsonFormatter(){
 
@@ -31,6 +31,13 @@ setError("Invalid JSON");
 }
 
 return(
+    <>
+    <SEO
+  title="JSON Formatter & Validator Online"
+  description="Format and validate JSON data online for free. Make JSON code easier to read and detect invalid JSON instantly."
+  keywords="json formatter, json validator, format json, json beautifier"
+  url="https://web-tools-platform.vercel.app/json-formatter"
+/>
 
 <div style={{padding:"30px"}}>
 <BackHome/>
@@ -62,7 +69,7 @@ Format JSON
 <pre>{output}</pre>
 
 </div>
-
+</>
 );
 
 }

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 export default function ImageToBase64() {
 
@@ -21,6 +22,13 @@ export default function ImageToBase64() {
   };
 
   return (
+    <>
+    <SEO
+  title="Image to Base64 Converter Online"
+  description="Convert images to Base64 online for free. Upload an image, preview it, and copy the Base64 encoded data."
+  keywords="image to base64, image base64 converter, convert image to base64, base64 image"
+  url="https://web-tools-platform.vercel.app/image-to-base64"
+/>
     <div>
         <BackHome/>
 
@@ -31,5 +39,6 @@ export default function ImageToBase64() {
         onChange={(e) => convert(e.target.files[0])}
       />
     </div>
+    </>
   );
 }

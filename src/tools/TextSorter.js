@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function TextSorter(){
 
@@ -15,7 +16,13 @@ setResult(sorted)
 }
 
 return(
-
+<>
+<SEO
+  title="Text Sorter | Sort Lines Alphabetically Online"
+  description="Sort text and lines alphabetically online for free. Quickly organize your text."
+  keywords="text sorter, sort text, alphabetize text, sort lines"
+  url="https://web-tools-platform.vercel.app/text-sorter"
+/>
 <div style={{padding:"40px"}}>
 
 <BackHome/>
@@ -41,7 +48,7 @@ style={{width:"100%",height:"120px"}}
 />
 
 </div>
-
+</>
 )
 
 }

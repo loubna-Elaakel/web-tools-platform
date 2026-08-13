@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { QRCodeCanvas } from "qrcode.react";
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 
 function QrGenerator(){
@@ -23,7 +24,13 @@ link.click();
 }
 
 return(
-
+<>
+<SEO
+  title="QR Code Generator Online | Free QR Code Maker"
+  description="Generate QR codes for text and URLs online for free. Create and download QR codes instantly."
+  keywords="qr code generator, qr generator, create qr code, qr code maker"
+  url="https://web-tools-platform.vercel.app/qr-generator"
+/>
 <div style={{padding:"30px"}}>
 <BackHome/>
 
@@ -51,7 +58,7 @@ Download QR Code
 )}
 
 </div>
-
+</>
 );
 
 }

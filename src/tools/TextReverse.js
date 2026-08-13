@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function TextReverse(){
 
@@ -15,7 +16,13 @@ setResult(reversed)
 }
 
 return(
-
+<>
+<SEO
+  title="Text Reverser | Reverse Text Online"
+  description="Reverse text instantly online for free. Enter your text and get the reversed result."
+  keywords="text reverser, reverse text, reverse text online"
+  url="https://web-tools-platform.vercel.app/text-reverse"
+/>
 <div style={{padding:"40px"}}>
 
 <BackHome/>
@@ -40,7 +47,7 @@ style={{width:"100%",height:"120px"}}
 />
 
 </div>
-
+</>
 )
 
 }

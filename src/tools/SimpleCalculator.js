@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function SimpleCalculator(){
 
@@ -12,7 +13,13 @@ setResult(Number(num1)+Number(num2))
 }
 
 return(
-
+<>
+<SEO
+  title="Online Calculator | Free Simple Calculator"
+  description="Use this free online calculator for quick and simple mathematical calculations."
+  keywords="online calculator, simple calculator, free calculator, calculator online"
+  url="https://web-tools-platform.vercel.app/simple-calculator"
+/>
 <div className="tool-page">
 
 <BackHome/>
@@ -36,7 +43,7 @@ onChange={(e)=>setNum2(e.target.value)}
 <p>{result}</p>
 
 </div>
-
+</>
 )
 
 }

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function RegexTester(){
 
@@ -25,7 +26,13 @@ setResult("Invalid regex")
 }
 
 return(
-
+<>
+<SEO
+  title="Regex Tester Online | Test Regular Expressions"
+  description="Test regular expressions online with this free regex tester for developers."
+  keywords="regex tester, regular expression tester, regex online, regex tool"
+  url="https://web-tools-platform.vercel.app/regex-tester"
+/>
 <div className="tool-page">
 
 <BackHome/>
@@ -47,7 +54,7 @@ onChange={(e)=>setText(e.target.value)}
 <p>{result}</p>
 
 </div>
-
+</>
 )
 
 }

@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO"
 
 function ImageToBase64(){
 
@@ -34,7 +35,13 @@ alert("Base64 copied!")
 }
 
 return(
-
+<>
+<SEO
+  title="Image to Base64 Converter Online"
+  description="Convert images to Base64 online for free. Upload an image, preview it, and copy the Base64 encoded data instantly."
+  keywords="image to base64, image base64 converter, convert image to base64, base64 image"
+  url="https://web-tools-platform.vercel.app/image-to-base64"
+/>
 <div style={{padding:"40px",maxWidth:"700px",margin:"auto"}}>
  <BackHome/>
 <h2>Image To Base64</h2>
@@ -81,7 +88,7 @@ Copy Base64
 )}
 
 </div>
-
+</>
 )
 
 }

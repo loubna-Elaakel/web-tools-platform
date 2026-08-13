@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function RandomColorGenerator(){
 
@@ -19,7 +20,14 @@ setColor(newColor)
 }
 
 return(
+<>
 
+<SEO
+  title="Random Color Generator | Generate Random Colors"
+  description="Generate random colors and get their color codes instantly with this free online tool."
+  keywords="random color generator, random colors, color generator, hex color generator"
+  url="https://web-tools-platform.vercel.app/random-color-generator"
+/>
 <div style={{padding:"40px"}}>
 
 <BackHome/>
@@ -44,7 +52,7 @@ marginTop:"20px"
 <p>{color}</p>
 
 </div>
-
+</>
 )
 
 }

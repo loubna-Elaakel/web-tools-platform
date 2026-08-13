@@ -1,5 +1,6 @@
 import imageCompression from "browser-image-compression";
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 export default function CompressImage() {
 
@@ -18,7 +19,14 @@ export default function CompressImage() {
   };
 
   return (
-    <div>
+    <>
+    <SEO
+  title="Image Compressor Online | Compress Images for Free"
+  description="Compress images online for free and reduce image file size quickly while keeping good quality."
+  keywords="image compressor, compress image online, reduce image size, image compression"
+  url="https://web-tools-platform.vercel.app/image-compressor"
+/>
+        <div>
          <BackHome/>
 
       <h2>Compress Image</h2>
@@ -28,5 +36,6 @@ export default function CompressImage() {
         onChange={(e) => compress(e.target.files[0])}
       />
     </div>
+    </>
   );
 }

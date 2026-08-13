@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function Base64Tool(){
 
@@ -27,7 +28,13 @@ setResult("Invalid Base64")
 }
 
 return(
-
+    <>
+<SEO
+  title="Base64 Encoder & Decoder Online | Web Tools Platform"
+  description="Encode and decode Base64 text online for free. Fast and easy Base64 encoder and decoder."
+  keywords="base64 encoder, base64 decoder, encode base64, decode base64"
+  url="https://web-tools-platform.vercel.app/base64-tool"
+/>
 <div style={{padding:"40px"}}>
 
 <BackHome/>
@@ -57,7 +64,7 @@ Decode
 <p>{result}</p>
 
 </div>
-
+ </>
 )
 
 }

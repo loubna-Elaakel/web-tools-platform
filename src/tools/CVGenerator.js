@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import html2pdf from "html2pdf.js";
 import "./cv.css";
+import SEO from "../components/SEO";
 
 export default function CVGenerator() {
   const [data, setData] = useState({
@@ -56,6 +57,13 @@ export default function CVGenerator() {
 };
 
   return (
+    <>
+    <SEO
+  title="Free CV Generator | Create & Download Your CV"
+  description="Create a professional CV online for free. Add your information, photo, skills and experience, then download your CV as a PDF."
+  keywords="cv generator, resume generator, free cv maker, create cv online, resume maker"
+  url="https://web-tools-platform.vercel.app/cv-generator"
+/>
     <div className="container">
       
       {/* FORM */}
@@ -155,5 +163,6 @@ export default function CVGenerator() {
         </div>
       </div>
     </div>
+    </>
   );
 }

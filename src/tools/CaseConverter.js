@@ -1,12 +1,19 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function CaseConverter(){
 
 const [text,setText] = useState("")
 
 return(
-
+<>
+<SEO
+  title="Case Converter Online | Uppercase & Lowercase"
+  description="Convert text to uppercase, lowercase, or capitalized format online for free."
+  keywords="case converter, uppercase converter, lowercase converter, text case converter"
+  url="https://web-tools-platform.vercel.app/case-converter"
+/>
 <div style={{padding:"40px"}}>
 
 <BackHome/>
@@ -39,7 +46,7 @@ Capitalize
 </div>
 
 </div>
-
+</>
 )
 
 }

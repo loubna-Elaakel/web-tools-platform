@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function RandomNumber(){
 
@@ -16,6 +17,13 @@ setNumber(n)
 }
 
 return(
+<>
+<SEO
+  title="Random Number Generator | Free Online Tool"
+  description="Generate random numbers online for free. Choose a number range and get a random result instantly."
+  keywords="random number generator, random number, generate random number"
+  url="https://web-tools-platform.vercel.app/random-number"
+/>
 
 <div style={{padding:"40px"}}>
 
@@ -46,7 +54,7 @@ Generate
 <h3>{number}</h3>
 
 </div>
-
+</>
 )
 
 }

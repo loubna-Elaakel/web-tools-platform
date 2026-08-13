@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function PasswordStrength(){
 
@@ -23,6 +24,13 @@ setStrength("Strong")
 }
 
 return(
+    <>
+    <SEO
+  title="Password Strength Checker Online"
+  description="Check the strength of a password online and see whether it is weak, medium, or strong."
+  keywords="password strength checker, password checker, strong password, password security"
+  url="https://web-tools-platform.vercel.app/password-strength"
+/>
 
 <div>
  <BackHome/>
@@ -39,7 +47,7 @@ onChange={(e)=>checkPassword(e.target.value)}
 <p>Strength: {strength}</p>
 
 </div>
-
+</>
 )
 
 }

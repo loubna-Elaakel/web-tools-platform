@@ -1,5 +1,6 @@
 import React,{useState} from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function TimestampConverter(){
 
@@ -15,7 +16,13 @@ setDate(d.toString())
 }
 
 return(
-
+<>
+<SEO
+  title="Timestamp Converter | Convert Unix Timestamps"
+  description="Convert Unix timestamps online quickly and easily with this free timestamp converter."
+  keywords="timestamp converter, unix timestamp converter, epoch converter, unix time"
+  url="https://web-tools-platform.vercel.app/timestamp-converter"
+/>
 <div>
  <BackHome/>
 <h2>Timestamp Converter</h2>
@@ -33,7 +40,7 @@ Convert
 <p>{date}</p>
 
 </div>
-
+</>
 )
 
 }

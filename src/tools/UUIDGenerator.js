@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function UUIDGenerator(){
 
@@ -14,7 +15,13 @@ setUuid(id)
 }
 
 return(
-
+<>
+<SEO
+  title="UUID Generator Online | Generate Random UUIDs"
+  description="Generate UUIDs online for free. Create random unique identifiers instantly."
+  keywords="uuid generator, random uuid, generate uuid, uuid online"
+  url="https://web-tools-platform.vercel.app/uuid-generator"
+/>
 <div style={{padding:"40px"}}>
 
 <BackHome/>
@@ -30,7 +37,7 @@ Generate UUID
 <p>{uuid}</p>
 
 </div>
-
+</>
 )
 
 }

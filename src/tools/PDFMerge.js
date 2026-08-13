@@ -1,5 +1,6 @@
 import { PDFDocument } from "pdf-lib";
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 export default function MergePDF() {
 
@@ -24,6 +25,13 @@ export default function MergePDF() {
   };
 
   return (
+    <>
+    <SEO
+  title="Merge PDF Files Online | Free PDF Merger"
+  description="Merge multiple PDF files into one PDF document online for free. Simple and fast PDF merger."
+  keywords="merge pdf, pdf merger, combine pdf files, merge pdf online"
+  url="https://web-tools-platform.vercel.app/pdf-merge"
+/>
     <div>
          <BackHome/>
 
@@ -35,5 +43,6 @@ export default function MergePDF() {
         onChange={(e) => mergePDFs(e.target.files)}
       />
     </div>
+    </>
   );
 }

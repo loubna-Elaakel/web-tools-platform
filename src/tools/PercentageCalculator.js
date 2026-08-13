@@ -1,5 +1,6 @@
 import { useState } from "react"
 import BackHome from "../components/BackHome"
+import SEO from "../components/SEO";
 
 function PercentageCalculator(){
 
@@ -14,6 +15,13 @@ setResult((percent/100)*number)
 }
 
 return(
+    <>
+    <SEO
+  title="Percentage Calculator Online | Free Calculator"
+  description="Calculate percentages quickly and easily with this free online percentage calculator."
+  keywords="percentage calculator, calculate percentage, percent calculator, online percentage calculator"
+  url="https://web-tools-platform.vercel.app/percentage-calculator"
+/>
 
 <div style={{padding:"40px"}}>
 
@@ -42,7 +50,7 @@ Calculate
 <h3>{result}</h3>
 
 </div>
-
+</>
 )
 
 }
